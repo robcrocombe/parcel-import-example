@@ -1,0 +1,20 @@
+{
+  "name": "parcel-import-example",
+  "version": "1.0.0",
+  "description": "Reproduce a bug with Parcel and Moment",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/parcel-bundler/bin/cli.js ./index.html",
+    "setup": "cd ./node_modules/parcel-bundler && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "2.20.1",
+    "parcel-bundler": "git://github.com/fathyb/parcel.git#fix/primitive-wildcard"
+  },
+  "devDependencies": {
+    "typescript": "2.6.2"
+  }
+}
